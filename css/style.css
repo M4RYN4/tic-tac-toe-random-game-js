@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  text-transform: capitalize;
+}
+
+.wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-game {
+  width: 100%;
+  /* height: 15vh; */
+  position: relative;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-bottom: 40px; */
+  padding: 1em;
+}
+
+.heading1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.04em;
+  padding-top: 0.5em;
+}
+
+#main-game-wrapper{
+  /* font-family: "Permanent Marker", cursive; */
+  text-align: center;
+}
+#main-game{
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell{
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  font-size: 34px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-show {
+  background: lightblue;
+}
+
+.games-score-label {
+  display: flex; 
+  flex-direction: column;
+  font-size: 20px;
+  padding: 10px;
+}
+#text-content {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* margin-top: 3em;
+  margin-bottom: 1em; */
+}
+
+.games-score-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-game {
+  color: white;
+  background-color: lightslategrey;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-size:large;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.btn-game:active,
+.btn-game:hover {
+  color: black;
+  background: lightblue;
+}
+
+#games-score {
+  display: flex; 
+  flex-direction: column;
+  width: 360px;
+  font-size: 15px;
+}
+/*footer*/
+.footer-school-github {
+  padding: 1em;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#logoGitHub {
+  width: 40px;
+}
+
+#logoSchool {
+  width: 100px;
+}
+.footer-username:hover,
+.footer-school:hover,
+.footer-username:active,
+.footer-school:active{
+  background: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}
