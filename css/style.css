@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 
 body {
@@ -15,19 +16,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Indie Flower', cursive;
 }
 
-.header-game {
+.header-game,
+.footer-school-github {
   width: 100%;
-  /* height: 15vh; */
-  position: relative;
   background-color: lightslategrey;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  /* margin-bottom: 40px; */
   padding: 1em;
+  min-width: 370px;
 }
 
 .heading1 {
@@ -39,15 +39,16 @@ body {
 }
 
 #main-game-wrapper{
-  /* font-family: "Permanent Marker", cursive; */
   text-align: center;
 }
+
 #main-game{
   width: 360px;
   height: 360px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .cell{
   width: 120px;
   height: 120px;
@@ -74,8 +75,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px;
-  /* margin-top: 3em;
-  margin-bottom: 1em; */
 }
 
 .games-score-wrapper {
@@ -107,26 +106,33 @@ body {
   font-size: 15px;
 }
 /*footer*/
-.footer-school-github {
-  padding: 1em;
-  background-color: lightslategrey;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+.footer-link {
+  /* text-decoration: none; */
+  color: black;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-#logoGitHub {
+#logo-Git-Hub {
   width: 40px;
 }
 
-#logoSchool {
-  width: 100px;
+#github-username {
+   font-size: 11px;
 }
+
+.footer-username {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 .footer-username:hover,
-.footer-school:hover,
-.footer-username:active,
-.footer-school:active{
+.footer-username:active {
   background: lightblue;
   border: 1px solid lightblue;
   border-radius: 5px;
+  /* width: 100px; */
+  /* box-shadow: 0px 0px 5px 1px lightblue; */
 }
